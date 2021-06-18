@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --bot: #03fce3;
   --alternate-bot-text-color: #1c1c1c;
