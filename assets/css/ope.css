@@ -1,8 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
 :root {
-  --bot: #03fce3;
+  --bot: #ff371c;
   --alternate-bot-text-color: #1c1c1c;
 }
 
@@ -32,26 +29,24 @@ html {
 }
 
 .button {
-  color: #03fc77;
+  color: var(--bot);
   border-color: var(--bot);
   background-color: transparent;
-  transition: all 0.90s linear;
+  transition: all 0.40s linear;
 }
 
 .button:hover {
-  color: #fc6603;
-  background-color: #03fc77;
-  border-color: #03fce3;
-  transform: skewx(60deg);
-  transform: skewY(50deg);
+  color: var(--alternate-bot-text-color);
+  background-color: var(--bot);
+  border-color: var(--bot);
+  transform: skewx(10deg);
+  transform: skewY(10deg);
 }
 
 .discord:hover {
   color: #fff;
   background-color: #7289d9;
   border-color: #7289d9;
-  transform: skewx(60deg);
-  transform: skewY(50deg);
 }
 
 .partners {
