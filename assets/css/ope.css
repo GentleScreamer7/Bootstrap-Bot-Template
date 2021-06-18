@@ -29,24 +29,26 @@
 }
 
 .button {
-  color: var(--bot);
+  color: #03fc77;
   border-color: var(--bot);
   background-color: transparent;
-  transition: all 0.40s linear;
+  transition: all 0.90s linear;
 }
 
 .button:hover {
-  color: var(--alternate-bot-text-color);
-  background-color: var(--bot);
-  border-color: var(--bot);
-  transform: skewx(10deg);
-  transform: skewY(10deg);
+  color: #fc6603;
+  background-color: #03fc77;
+  border-color: #fffff;
+  transform: skewx(60deg);
+  transform: skewY(50deg);
 }
 
 .discord:hover {
   color: #fff;
   background-color: #7289d9;
   border-color: #7289d9;
+  transform: skewx(60deg);
+  transform: skewY(50deg);
 }
 
 .partners {
