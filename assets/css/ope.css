@@ -41,7 +41,7 @@ html {
 .button:hover {
   color: #fc6603;
   background-color: #03fc77;
-  border-color: #fffff;
+  border-color: #03fce3;
   transform: skewx(60deg);
   transform: skewY(50deg);
 }
