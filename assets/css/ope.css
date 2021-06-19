@@ -10,6 +10,9 @@
 ::-webkit-scrollbar-thumb {
   background: var(--bot);
 }
+	.invite-now-wrapper {
+		height: 102px;
+
 		.invite-now {
 			display: inline-block;
 			font-size: 2em;
