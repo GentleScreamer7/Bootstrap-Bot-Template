@@ -19,24 +19,6 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/ope.css" id='theme-link'>
 </head>
-<style>
- body {
-  color: ##2b9cff;
-  background: #fffff;
-}
-a {
-  color: #0033cc;
-}
-
-/* Dark Mode styles */
-body.dark-theme {
-  color: #ff317c;
-  background-color: #00000;
-}
-body.dark-theme a {
-  color: #ff317c;
-}
-</style>
 
 <body style="background: rgb(16,16,16);color: rgb(228,228,228);">
 
@@ -48,7 +30,8 @@ body.dark-theme a {
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
                 </ul>
-            </div><a class="btn btn-lg button" role="button" href="https://discord.gg/YPRB7FrvnG" target="_blank" style="margin-right: 10px;margin-left: 10px;border-radius: 104px;padding: 0px;height: x;border-width: 3px;"><i class="fab fa-discord" style="font-size: 23px;margin: 15px;"></i></a></div>
+            </div><a class="btn btn-lg button" role="button" href="https://discord.gg/YPRB7FrvnG" target="_blank" style="margin-right: 10px;margin-left: 10px;border-radius: 104px;padding: 0px;height: x;border-width: 3px;"><i class="far fa-flashlight" style="font-size: 23px;margin: 15px;"></i></a>
+<a class="btn-toggle" role="button"  target="_blank" style="margin-right: 10px;margin-left: 10px;border-radius: 104px;padding: 0px;height: x;border-width: 3px;"><i class="" style="font-size: 23px;margin: 15px;"></i></a></div>
     </nav>
 
     <main class="page landing-page">
@@ -73,11 +56,13 @@ body.dark-theme a {
      
 
 <script>
-const btn = document.querySelector('.btn-toggle'); // Listen for a click on the button 
-btn.addEventListener('click', function() {
-// Then toggle (add/remove) the .dark-theme class to the body 
-document.body.classList.toggle('dark-theme'); 
-})
+
+const btn = document.querySelector(".btn-toggle"); // Select the stylesheet <link> 
+const theme = document.querySelector("#theme-link"); // Listen for a click on the button btn.addEventListener("click", function() { // If the current URL contains "ligh-theme.css" if (theme.getAttribute("href") == "light-theme.css") { // ... then switch it to "dark-theme.css" theme.href = "dark-theme.css"; // Otherwise... } else {
+ // ... switch it to "light-theme.css" 
+theme.href = "light-theme.css"; 
+} 
+});
 
 
     </script>
