@@ -64,6 +64,12 @@
   background-color: transparent;
   transition: all 0.40s linear;
 }
+.button2 {
+  color: var(--bot);
+  border-color: var(--bot);
+  background-color: transparent;
+  transition: all 0.40s linear;
+}
 
 .button:hover {
   color: var(--alternate-bot-text-color);
