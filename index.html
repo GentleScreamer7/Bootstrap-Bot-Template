@@ -46,22 +46,23 @@
             <a class="btn btn-lg button" role="button" href="https://docs.jellyop.ga">Docs Page</a>
             <a class="btn btn-lg button" role="button" href="https://jellyop.ga/privacy">Privacy Policy</a>
             <a class="btn btn-lg button" role="button" href="https://patreon.com/jellybot">Premium</a>
-            <button onclick="myFunction()">Toggle Theme</button> 
+            <a class="btn btn-lg button" role="button2">Toggle Theme</a>
+        
 
      
 
-    <script> 
-
-        function myFunction() { 
-
-        var element = document.body; 
-
-        element.classList.toggle("light"); 
-
-        } 
-
-    </script>
-
+<script>
+      const btn = document.querySelector(".button2");
+      const theme = document.querySelector("#theme-link");
+      btn.addEventListener("click", function() {
+        // Swap out the URL for the different stylesheets
+        if (theme.getAttribute("href") == "light-theme.css") {
+          theme.href = "dark-theme.css";
+        } else {
+          theme.href = "light-theme.css";
+        }
+      });
+    </script>
 
 
 
