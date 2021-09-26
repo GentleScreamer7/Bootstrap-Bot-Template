@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+</style>
+body{ 
+
+        padding:0% 3% 10% 3%; 
+
+        text-align:center; 
+
+        } 
+
+        h1{ 
+
+        color: #32a852; 
+
+        margin-top:30px; 
+
+        } 
+
+     
+
+        button{ 
+
+            cursor: pointer; 
+
+            border: 1px solid #555; 
+
+            text-align: center; 
+
+            padding: 5px; 
+
+            margin-left: 8px; 
+
+        } 
+
+        .dark{ 
+
+            background-color: #222; 
+
+            color: #e6e6e6; 
+
+        }
+
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Cute Little Jelly</title>
@@ -45,7 +87,23 @@
             <a class="btn btn-lg button" role="button" href="https://docs.jellyop.ga">Docs Page</a>
             <a class="btn btn-lg button" role="button" href="https://jellyop.ga/privacy">Privacy Policy</a>
             <a class="btn btn-lg button" role="button" href="https://patreon.com/jellybot">Premium</a>
-            <a class="btn btn-lg button" role="button" href="https://jellyapi.ga">API</a>
+            <button onclick="myFunction()">Toggle Theme</button> 
+
+     
+
+    <script> 
+
+        function myFunction() { 
+
+        var element = document.body; 
+
+        element.classList.toggle("dark"); 
+
+        } 
+
+    </script>
+
+
 
 
 </div>
