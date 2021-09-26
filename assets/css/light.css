@@ -10,6 +10,10 @@
 ::-webkit-scrollbar-thumb {
   background: var(--bot);
 }
+body{
+background-color: #ffffff;
+color: #ff2b80;
+}
 
 
 
