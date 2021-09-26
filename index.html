@@ -33,7 +33,24 @@
 
     <main class="page landing-page">
 
-           
+<style>
+ body {
+  color: ##2b9cff;
+  background: #fffff;
+}
+a {
+  color: #0033cc;
+}
+ 
+/* Dark Mode styles */
+body.dark-theme {
+  color: #ff317c;
+  background-color: #00000;
+}
+body.dark-theme a {
+  color: #ff317c;
+}
+</style>          
 <div id="top" class="text">
 <img src="https://images-ext-1.discordapp.net/external/kmxGd-MUBElooYD_XpGxLCdsd2A8sdngovusbi1z49A/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/867626347262246922/ab7c6c1c2e575b646064483b274badac.png" alt="jelly">
                 <h2><span style="color:#00ff00">Jelly</span></h2>
@@ -45,22 +62,20 @@
             <a class="btn btn-lg button" role="button" href="https://docs.jellyop.ga">Docs Page</a>
             <a class="btn btn-lg button" role="button" href="https://jellyop.ga/privacy">Privacy Policy</a>
             <a class="btn btn-lg button" role="button" href="https://patreon.com/jellybot">Premium</a>
-            <a class="button2" role="button2">Toggle Theme</a>
+            <button class="btn-toggle">Toggle Dark Mode</button> 
+
         
 
      
 
 <script>
-      const btn = document.querySelector(".button2");
-      const theme = document.querySelector("#theme-link");
-      btn.addEventListener("click", function() {
-        // Swap out the URL for the different stylesheets
-        if (theme.getAttribute("href") == "assets/css/light.css") {
-          theme.href = "assets/css/ope.css";
-        } else {
-          theme.href = "assets/css/light.css";
-        }
-      });
+const btn = document.querySelector('.btn-toggle'); // Listen for a click on the button 
+btn.addEventListener('click', function() {
+// Then toggle (add/remove) the .dark-theme class to the body 
+document.body.classList.toggle('dark-theme'); 
+})
+
+
     </script>
 
 
